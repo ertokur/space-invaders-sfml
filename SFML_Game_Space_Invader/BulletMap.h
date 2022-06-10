@@ -5,13 +5,15 @@
 
 class BulletMap :public sf::Drawable, public GameObject {
 
-public:
-	BulletMap();
-	static void add(GameObject& const g_object);
-	static void update();
-	virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 private:
 	std::vector<GameObject*> m_list;
 	static BulletMap* m_bullets;
 	friend class Game;
+
+	virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+public:
+	BulletMap();
+	static void add(GameObject& const g_object);
+	static void update();
+	
 };

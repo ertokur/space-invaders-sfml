@@ -11,9 +11,10 @@ private:
 	sf::Sound m_sound;
 	static EnemyMap* m_enemies;
 
+	virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+
 public:
 	EnemyMap();
-	virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+	
 	friend class Game;
-
 };

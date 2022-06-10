@@ -16,7 +16,7 @@ private:
 	
 	sf::Sound m_sound;
 	bool m_isShooting = false;
-
+	
 	friend class Game;
 
 };

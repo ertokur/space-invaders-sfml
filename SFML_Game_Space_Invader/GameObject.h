@@ -2,6 +2,8 @@
 #include <SFML/Graphics.hpp>
 
 class GameObject: public sf::Drawable {
+private:
+	virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
 public:
 
@@ -20,6 +22,5 @@ public:
 protected:
 	sf::Texture m_tex;
 	sf::RectangleShape m_shape;
-	virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
-
+	
 };

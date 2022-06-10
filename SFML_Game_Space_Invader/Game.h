@@ -5,8 +5,10 @@
 #include "AssetManager.h"
 #include "EnemyMap.h"
 #include "BulletMap.h"
+#include "BackgroundStars.h"
 
-class Game {
+class Game
+{
 
 public:
 	Game(Game&) = delete;
@@ -23,10 +25,16 @@ private:
 	BulletMap        bullets;
 
 	Player m_player;
+	
+	BackgroundStars m_stars;
+
+	int totalScore = 0;
 
 	void processEvents();
 	void updateAll();
 	void renderAll();
+
 	bool enemiesOver();
 
+	int drawMenu();
 };

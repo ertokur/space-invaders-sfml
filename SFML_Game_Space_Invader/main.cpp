@@ -2,11 +2,13 @@
 #include <iostream>
 #include "Game.h"
 
+#include "imgui.h"
+#include "imgui-SFML.h"
 
 int main() {
 
-	Game game(800,600,60);
+	Game game(800, 600, 60);
 	game.run();
-	return EXIT_SUCCESS;
 
+	return EXIT_SUCCESS;
 }
