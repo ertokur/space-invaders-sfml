@@ -153,6 +153,7 @@
     <ClCompile Include="AssetManager.cpp" />
     <ClCompile Include="BackgroundStars.cpp" />
     <ClCompile Include="BulletMap.cpp" />
+    <ClCompile Include="EnemyBulletMap.cpp" />
     <ClCompile Include="EnemyMap.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameObject.cpp" />
@@ -168,6 +169,7 @@
     <ClInclude Include="AssetManager.h" />
     <ClInclude Include="BackgroundStars.h" />
     <ClInclude Include="BulletMap.h" />
+    <ClInclude Include="EnemyBulletMap.h" />
     <ClInclude Include="EnemyMap.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameObject.h" />

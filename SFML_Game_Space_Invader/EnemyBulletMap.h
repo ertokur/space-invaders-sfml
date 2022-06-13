@@ -3,19 +3,20 @@
 #include "GameObject.h"
 #include <list>
 
-class BulletMap :public sf::Drawable, public GameObject {
+class EnemyBulletMap :public sf::Drawable, public GameObject {
 
 private:
 	std::vector<GameObject*> m_list;
-	static BulletMap* m_bullets;
-
+	sf::Vector2u m_windowSize;
+	static EnemyBulletMap* m_enemybullets;
+	
 	static bool is_over(GameObject* obj);
 
 	virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 public:
-	BulletMap();
+	EnemyBulletMap(sf::Vector2u windowSize);
 	static void add(GameObject& const g_object);
 	static void update();
-	
+
 	friend class Game;
 };

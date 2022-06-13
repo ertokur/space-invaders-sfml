@@ -16,10 +16,10 @@ EnemyMap::EnemyMap():m_sound(AssetManager::getSoundBuffer("assets/sounds/ShipHit
 
 	for (int i = 0; i < 10; i++) {
 		for (int j = 0; j < 3; j++)
-			m_enemies->m_objects[i].push_back(new GameObject(60, 35, A2, i * 80 + 40, j * 50 + 50));
+			m_enemies->m_objects[i].push_back(new GameObject(60, 35, A2, i * 80 + 40, j * 50 + 100));
 		for (int j = 3; j < 6; j++)
-			m_enemies->m_objects[i].push_back(new GameObject(60, 35, C2, i * 80 + 40, j * 50 + 50));
-		m_enemies->m_objects[i].push_back(new GameObject(60, 35, B2, i * 80 + 40, 350));
+			m_enemies->m_objects[i].push_back(new GameObject(60, 35, C2, i * 80 + 40, j * 50 + 100));
+		m_enemies->m_objects[i].push_back(new GameObject(60, 35, B2, i * 80 + 40, 400));
 	}
 
 }
